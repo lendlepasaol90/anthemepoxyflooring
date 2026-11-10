@@ -1,0 +1,313 @@
+{
+ "heroDusk": {
+  "base": "/images/hero/anthem-foothills-golf-course-at-dusk",
+  "widths": [
+   480,
+   800,
+   1200,
+   1600,
+   2200
+  ],
+  "w": 2200,
+  "h": 1253,
+  "alt": "Golf course and desert foothills glowing at dusk"
+ },
+ "ridgeline": {
+  "base": "/images/local/rugged-desert-ridgeline-and-scrub",
+  "widths": [
+   480,
+   800,
+   1200,
+   1600,
+   2200
+  ],
+  "w": 2200,
+  "h": 1467,
+  "alt": "Rugged desert ridgeline above Sonoran scrub"
+ },
+ "cactusGold": {
+  "base": "/images/local/saguaro-field-at-sunrise",
+  "widths": [
+   480,
+   800,
+   1200,
+   1600,
+   2200
+  ],
+  "w": 2200,
+  "h": 1467,
+  "alt": "Saguaro and cholla catching the first light of sunrise"
+ },
+ "desertHome": {
+  "base": "/images/local/southwestern-home-in-desert-landscape",
+  "widths": [
+   480,
+   800,
+   1200,
+   1600,
+   2200
+  ],
+  "w": 2200,
+  "h": 949,
+  "alt": "Southwestern-style home set into a natural desert landscape"
+ },
+ "deckSunset": {
+  "base": "/images/patio/outdoor-dining-terrace-at-sunset",
+  "widths": [
+   480,
+   800,
+   1200,
+   1600,
+   2200
+  ],
+  "w": 2200,
+  "h": 1468,
+  "alt": "Outdoor dining terrace under a slatted pergola at sunset"
+ },
+ "patioLounge": {
+  "base": "/images/patio/backyard-lounge-with-orange-sectional",
+  "widths": [
+   480,
+   800,
+   1200,
+   1600,
+   2200
+  ],
+  "w": 2200,
+  "h": 1467,
+  "alt": "Backyard lounge with an orange sectional on a light concrete patio"
+ },
+ "patioFire": {
+  "base": "/images/patio/pergola-patio-with-outdoor-fireplace",
+  "widths": [
+   480,
+   800,
+   1200,
+   1600,
+   2200
+  ],
+  "w": 2200,
+  "h": 3300,
+  "alt": "Pergola-covered patio with an outdoor fireplace"
+ },
+ "palmHome": {
+  "base": "/images/patio/poolside-dining-on-coated-patio",
+  "widths": [
+   480,
+   800,
+   1200,
+   1600,
+   2200
+  ],
+  "w": 2200,
+  "h": 1650,
+  "alt": "Poolside dining set on a sunny patio"
+ },
+ "metalGold": {
+  "base": "/images/metallic/blue-and-gold-metallic-epoxy-swirl",
+  "widths": [
+   480,
+   800,
+   1200,
+   1600,
+   2200
+  ],
+  "w": 2200,
+  "h": 1019,
+  "alt": "Blue and gold metallic epoxy swirl detail"
+ },
+ "flakeRust": {
+  "base": "/images/flake/rust-cream-and-charcoal-flake-chips",
+  "widths": [
+   480,
+   800,
+   1200,
+   1600
+  ],
+  "w": 1600,
+  "h": 1200,
+  "alt": "Rust, cream and charcoal decorative flake chips up close"
+ },
+ "terrazzo": {
+  "base": "/images/flake/cream-terrazzo-style-micro-flake",
+  "widths": [
+   480,
+   800,
+   1200,
+   1600
+  ],
+  "w": 1600,
+  "h": 1067,
+  "alt": "Cream terrazzo-style micro flake floor texture"
+ },
+ "garagePair": {
+  "base": "/images/garage/two-cars-on-glossy-garage-floor",
+  "widths": [
+   480,
+   800,
+   1200,
+   1600
+  ],
+  "w": 1600,
+  "h": 1068,
+  "alt": "Two cars parked on a glossy coated garage floor"
+ },
+ "garageDoorway": {
+  "base": "/images/garage/classic-convertible-in-coated-garage",
+  "widths": [
+   480,
+   800,
+   1200,
+   1600
+  ],
+  "w": 1600,
+  "h": 1066,
+  "alt": "Classic convertible parked in a garage with a coated floor"
+ },
+ "sportsGarage": {
+  "base": "/images/garage/sports-car-on-bright-glossy-floor",
+  "widths": [
+   480,
+   800,
+   1200,
+   1600
+  ],
+  "w": 1600,
+  "h": 900,
+  "alt": "White sports car on a bright, glossy garage floor"
+ },
+ "bareGarage": {
+  "base": "/images/garage/bare-concrete-garage-before-coating",
+  "widths": [
+   480,
+   800,
+   1200,
+   1600
+  ],
+  "w": 1600,
+  "h": 1066,
+  "alt": "Bare concrete garage floor before coating"
+ },
+ "crewTrowel": {
+  "base": "/images/process/troweling-self-leveling-coating",
+  "widths": [
+   480,
+   800,
+   1200,
+   1600
+  ],
+  "w": 1600,
+  "h": 1066,
+  "alt": "Installer troweling a self-leveling coating"
+ },
+ "pour": {
+  "base": "/images/process/pouring-pigmented-epoxy-resin",
+  "widths": [
+   480,
+   800,
+   1200,
+   1600
+  ],
+  "w": 1600,
+  "h": 1014,
+  "alt": "Pigmented epoxy resin being poured onto a floor"
+ },
+ "grinder": {
+  "base": "/images/process/diamond-grinder-on-concrete-slab",
+  "widths": [
+   480,
+   800,
+   1200,
+   1600
+  ],
+  "w": 1600,
+  "h": 1067,
+  "alt": "Installer running a diamond grinder across a concrete slab"
+ },
+ "sweep": {
+  "base": "/images/process/sweeping-dust-before-coating",
+  "widths": [
+   480,
+   800,
+   1200,
+   1600
+  ],
+  "w": 1600,
+  "h": 1066,
+  "alt": "Sweeping dust from a ground slab before coating"
+ },
+ "kitchenSleek": {
+  "base": "/images/residential/sleek-kitchen-glossy-floor",
+  "widths": [
+   480,
+   800,
+   1200,
+   1600,
+   2200
+  ],
+  "w": 2200,
+  "h": 1467,
+  "alt": "Sleek black-and-white kitchen with a glossy floor"
+ },
+ "gameRoom": {
+  "base": "/images/residential/game-room-with-polished-floor",
+  "widths": [
+   480,
+   800,
+   1200,
+   1600,
+   2200
+  ],
+  "w": 2200,
+  "h": 1467,
+  "alt": "Game room with a pool table and a polished floor"
+ },
+ "salon": {
+  "base": "/images/commercial/salon-with-seamless-floor",
+  "widths": [
+   480,
+   800,
+   1200,
+   1600
+  ],
+  "w": 1600,
+  "h": 1032,
+  "alt": "Salon interior with a seamless coated floor"
+ },
+ "restaurant": {
+  "base": "/images/commercial/restaurant-dining-room",
+  "widths": [
+   480,
+   800,
+   1200,
+   1600
+  ],
+  "w": 1600,
+  "h": 1066,
+  "alt": "Restaurant dining room with sturdy tables"
+ },
+ "detailShop": {
+  "base": "/images/commercial/detailing-shop-coated-floor",
+  "widths": [
+   480,
+   800,
+   1200,
+   1600
+  ],
+  "w": 1600,
+  "h": 1066,
+  "alt": "Auto detailing shop with a coated floor and shelving"
+ },
+ "warehouse": {
+  "base": "/images/industrial/warehouse-with-reflective-epoxy-floor",
+  "widths": [
+   480,
+   800,
+   1200,
+   1600
+  ],
+  "w": 1600,
+  "h": 1067,
+  "alt": "Warehouse with a reflective epoxy floor"
+ }
+}
