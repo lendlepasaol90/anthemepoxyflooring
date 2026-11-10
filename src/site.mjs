@@ -9,7 +9,7 @@ export const site = {
   geo: { lat: 33.8673, lng: -112.1468 },
   mapQuery: 'Anthem, AZ 85086',
   hours: 'Mon–Fri 7am–6pm · Sat by appointment',
-  ogImage: '/images/hero/anthem-foothills-golf-course-at-dusk-1200.webp',
+  ogImage: '/images/hero/foothills-golf-course-at-dusk-1200.webp',
 };
 
 export const services = [
