@@ -120,6 +120,7 @@ export function footer() {
   <div class="wrap ftr__base"><p>© ${y} ${esc(site.name)}</p><p><a href="/privacy-policy/">Privacy</a> · <a href="/sitemap.xml">Sitemap</a></p></div>
 </footer>
 <script src="/assets/js/anthem.js?v=1" defer></script>
+<script src="/assets/js/formsubmit.js" data-site="Anthem Epoxy Flooring" defer></script>
 </body>
 </html>`;
 }
