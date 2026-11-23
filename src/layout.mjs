@@ -69,35 +69,24 @@ export function header(active = '', overlay = false) {
             <ul>${services.map((s) => `<li><a href="/${s.slug}/"${on(s.slug)}><small>${s.tag}</small>${s.name}</a></li>`).join('')}</ul>
           </div>
         </li>
-        <li><a href="/about-us/"${on('about')}>About Us</a></li>
-        <li><a href="/service-areas/"${on('areas')}>Service Areas</a></li>
-        <li><a href="/contact-us/"${on('contact')}>Contact</a></li>
+        <li><a href="/about/"${on('about')}>About</a></li>
+        <li><a href="/areas-we-serve/"${on('areas')}>Areas We Serve</a></li>
+        <li><a href="/contact/"${on('contact')}>Contact</a></li>
       </ul>
     </nav>
     <a class="hdr__tel" href="tel:${site.phone.tel}">${site.phone.display}</a>
-    <button type="button" class="pill pill--gold hdr__quote" aria-expanded="false" aria-controls="quote-drawer" data-drawer-open>Get a quote</button>
+    <a class="pill pill--gold hdr__quote" href="#__EST__">Get a quote</a>
     <button type="button" class="hdr__menu" aria-expanded="false" aria-controls="mobile-nav" data-menu><span></span><span></span><b class="skip">Menu</b></button>
   </div>
   <div class="mnav" id="mobile-nav" hidden data-mnav>
     <ul>
       <li><a href="/">Home</a></li>
       ${services.map((s) => `<li><a href="/${s.slug}/">${s.name}</a></li>`).join('')}
-      <li><a href="/about-us/">About Us</a></li>
-      <li><a href="/service-areas/">Service Areas</a></li>
-      <li><a href="/contact-us/">Contact</a></li>
+      <li><a href="/about/">About</a></li>
+      <li><a href="/areas-we-serve/">Areas We Serve</a></li>
+      <li><a href="/contact/">Contact</a></li>
     </ul>
-    <div class="mnav__cta"><button type="button" class="pill pill--gold" data-drawer-open>Get a quote</button><a class="pill pill--line" href="tel:${site.phone.tel}">${site.phone.display}</a></div>
-  </div>
-  <div class="drawer" id="quote-drawer" role="dialog" aria-modal="true" aria-labelledby="drawer-title" hidden data-drawer>
-    <div class="drawer__scrim" data-drawer-close></div>
-    <div class="drawer__panel">
-      <button type="button" class="drawer__x" aria-label="Close quote form" data-drawer-close>×</button>
-      <p class="eyebrow">Free, no-obligation quote</p>
-      <p class="drawer__title" id="drawer-title">Let’s talk about your floor.</p>
-      <p class="drawer__lead">Four quick details and we’ll reach out within one business day to schedule an on-site look.</p>
-      ${form({ id: 'hdq', submit: 'Request my quote' })}
-      <p class="drawer__call">Prefer the phone? <a href="tel:${site.phone.tel}">${site.phone.display}</a></p>
-    </div>
+    <div class="mnav__cta"><a class="pill pill--gold" href="#__EST__">Get a quote</a><a class="pill pill--line" href="tel:${site.phone.tel}">${site.phone.display}</a></div>
   </div>
 </header>`;
 }
@@ -114,10 +103,10 @@ export function footer() {
       <p class="ftr__hours">${site.hours}</p>
     </div>
     <nav class="ftr__col" aria-label="Services"><h2>Coatings</h2><ul>${services.map((s) => `<li><a href="/${s.slug}/">${s.name}</a></li>`).join('')}</ul></nav>
-    <nav class="ftr__col" aria-label="Company"><h2>Company</h2><ul><li><a href="/about-us/">About Us</a></li><li><a href="/service-areas/">Service Areas</a></li><li><a href="/contact-us/">Contact</a></li><li><a href="/privacy-policy/">Privacy Policy</a></li></ul><h2 class="ftr__h2b">Areas</h2><p class="ftr__areas">${areas.map((a) => a.name).join(' / ')}</p></nav>
+    <nav class="ftr__col" aria-label="Company"><h2>Company</h2><ul><li><a href="/about/">About</a></li><li><a href="/areas-we-serve/">Areas We Serve</a></li><li><a href="/contact/">Contact</a></li><li><a href="/privacy/">Privacy Policy</a></li></ul><h2 class="ftr__h2b">Areas</h2><p class="ftr__areas">${areas.map((a) => a.name).join(' / ')}</p></nav>
   </div>
   <div class="wrap ftr__map"><iframe title="Map of Anthem, Arizona" src="${map}" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe><span class="ftr__pin">Anthem, Arizona</span></div>
-  <div class="wrap ftr__base"><p>© ${y} ${esc(site.name)}</p><p><a href="/privacy-policy/">Privacy</a> · <a href="/sitemap.xml">Sitemap</a></p></div>
+  <div class="wrap ftr__base"><p>© ${y} ${esc(site.name)}</p><p><a href="/privacy/">Privacy</a> · <a href="/sitemap.xml">Sitemap</a></p></div>
 </footer>
 <script src="/assets/js/anthem.js?v=1" defer></script>
 <script src="/assets/js/formsubmit.js" data-site="Anthem Epoxy Flooring" defer></script>

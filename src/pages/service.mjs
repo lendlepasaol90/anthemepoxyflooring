@@ -57,7 +57,7 @@ export function renderService(c) {
         </dl>
         <p class="spec__k">Typical layers</p>
         <ol class="spec__layers">${c.spec.layers.map((l) => `<li>${esc(l)}</li>`).join('')}</ol>
-        <button type="button" class="pill pill--gold" data-drawer-open>Get a free quote</button>
+        <a class="pill pill--gold" href="#__EST__">Get a free quote</a>
         <a class="spec__tel" href="tel:${site.phone.tel}">or call ${site.phone.display}</a>
       </div>
     </aside>
