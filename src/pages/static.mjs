@@ -8,9 +8,9 @@ const banner = ({ eyebrow, h1, lead, image, trail }) => `<section class="mhero m
 </section>`;
 
 export function renderAbout() {
-  const trail = [{ name: 'Home', url: '/' }, { name: 'About Us', url: '/about-us/' }];
+  const trail = [{ name: 'Home', url: '/' }, { name: 'About', url: '/about/' }];
   const body = `<main id="main">
-  ${banner({ eyebrow: 'About us', h1: 'A floor coating crew that sweats the details.', lead: 'We coat garages, patios, interiors and commercial floors for Anthem and the north Valley foothills — with preparation first and shortcuts never.', image: 'crewTrowel', trail })}
+  ${banner({ eyebrow: 'About', h1: 'A floor coating crew that sweats the details.', lead: 'We coat garages, patios, interiors and commercial floors for Anthem and the north Valley foothills — with preparation first and shortcuts never.', image: 'crewTrowel', trail })}
   <section class="sec">
     <div class="wrap about2">
       <div class="prose">
@@ -33,12 +33,12 @@ export function renderAbout() {
         <figure>${img('grinder', { sizes: '(max-width: 900px) 94vw, 32vw' })}</figure>
         <h2>Our coatings</h2>
         <ul>${services.map((s) => `<li><a href="/${s.slug}/">${s.name}</a></li>`).join('')}</ul>
-        <button type="button" class="pill pill--gold" data-drawer-open>Get a free quote</button>
+        <a class="pill pill--gold" href="#__EST__">Get a free quote</a>
       </aside>
     </div>
   </section>
 </main>`;
-  return head({ title: 'About Us | Anthem Epoxy Flooring', description: 'Meet Anthem Epoxy Flooring — a north Valley floor coating crew focused on proper preparation, post-tension-safe methods and finishes chosen for desert conditions.', path: '/about-us/', schema: [businessSchema(), crumbSchema(trail)] }) + header('about') + body + footer();
+  return head({ title: 'About | Anthem Epoxy Flooring', description: 'Meet Anthem Epoxy Flooring — a north Valley floor coating crew focused on proper preparation, post-tension-safe methods and finishes chosen for desert conditions.', path: '/about/', schema: [businessSchema(), crumbSchema(trail)] }) + header('about') + body + footer();
 }
 
 const areaCopy = {
@@ -52,24 +52,24 @@ const areaCopy = {
 };
 
 export function renderAreas() {
-  const trail = [{ name: 'Home', url: '/' }, { name: 'Service Areas', url: '/service-areas/' }];
+  const trail = [{ name: 'Home', url: '/' }, { name: 'Areas We Serve', url: '/areas-we-serve/' }];
   const body = `<main id="main">
-  ${banner({ eyebrow: 'Service areas', h1: 'Serving Anthem and the north Valley foothills.', lead: 'From Anthem’s neighborhoods to the custom lots of Desert Hills and New River, we bring the same preparation-first approach to every floor.', image: 'ridgeline', trail })}
+  ${banner({ eyebrow: 'Areas We Serve', h1: 'Serving Anthem and the north Valley foothills.', lead: 'From Anthem’s neighborhoods to the custom lots of Desert Hills and New River, we bring the same preparation-first approach to every floor.', image: 'ridgeline', trail })}
   <section class="sec">
     <div class="wrap">
       <div class="areacards">${areas.map((a) => `<article class="areacard rise"><h2>${a.name}</h2><p>${esc(areaCopy[a.name])}</p></article>`).join('')}</div>
       <div class="prose narrow rise" style="margin-top:60px">
         <h2>Just outside our area?</h2>
-        <p>We regularly help customers beyond these communities, especially for larger garages, shops and commercial floors. Tell us where your project is and we’ll let you know how we can help. Every service — from <a href="/garage-floor-coatings/">garage coatings</a> and <a href="/patio-concrete-coatings/">patio coatings</a> to <a href="/warehouse-floor-coatings/">warehouse floors</a> — is available throughout our service area.</p>
+        <p>We regularly help customers beyond these communities, especially for larger garages, shops and commercial floors. Tell us where your project is and we’ll let you know how we can help. Every service — from <a href="/garage-epoxy-flooring/">garage coatings</a> and <a href="/outdoor-living-coatings/">patio coatings</a> to warehouse floors — is available throughout our service area.</p>
       </div>
     </div>
   </section>
 </main>`;
-  return head({ title: 'Service Areas | Anthem Epoxy Flooring', description: 'Floor coatings in Anthem Parkside, Anthem Country Club, Desert Hills, New River, Tramonto and north Phoenix, Cave Creek and Black Canyon City.', path: '/service-areas/', schema: [businessSchema(), crumbSchema(trail)] }) + header('areas') + body + footer();
+  return head({ title: 'Areas We Serve | Anthem Epoxy Flooring', description: 'Floor coatings in Anthem Parkside, Anthem Country Club, Desert Hills, New River, Tramonto and north Phoenix, Cave Creek and Black Canyon City.', path: '/areas-we-serve/', schema: [businessSchema(), crumbSchema(trail)] }) + header('areas') + body + footer();
 }
 
 export function renderContact() {
-  const trail = [{ name: 'Home', url: '/' }, { name: 'Contact', url: '/contact-us/' }];
+  const trail = [{ name: 'Home', url: '/' }, { name: 'Contact', url: '/contact/' }];
   const body = `<main id="main">
   ${banner({ eyebrow: 'Contact', h1: 'Request your free quote.', lead: 'Share a few details and we’ll reach out within one business day to set up an on-site visit.', image: 'bareGarage', trail })}
   <section class="sec">
@@ -78,16 +78,16 @@ export function renderContact() {
       <div class="contact2__info">
         <div class="cbox rise"><h2>Call</h2><p class="cbox__big"><a href="tel:${site.phone.tel}">${site.phone.display}</a></p><p>${site.hours}</p></div>
         <div class="cbox rise"><h2>What happens next</h2><ol><li>We confirm details and schedule a visit.</li><li>We inspect the slab, test moisture and show samples.</li><li>You receive an itemized written quote.</li><li>We schedule at a time that suits you.</li></ol></div>
-        <div class="cbox rise"><h2>Service area</h2><p>Anthem, Desert Hills, New River, Tramonto and north Phoenix, Cave Creek and Black Canyon City. <a href="/service-areas/">Details</a>.</p></div>
+        <div class="cbox rise"><h2>Service area</h2><p>Anthem, Desert Hills, New River, Tramonto and north Phoenix, Cave Creek and Black Canyon City. <a href="/areas-we-serve/">Details</a>.</p></div>
       </div>
     </div>
   </section>
 </main>`;
-  return head({ title: 'Contact Us | Free Quote | Anthem Epoxy Flooring', description: 'Request a free on-site quote for garage, patio, interior or commercial floor coatings in Anthem, AZ. We respond within one business day.', path: '/contact-us/', schema: [businessSchema(), crumbSchema(trail)] }) + header('contact') + body + footer();
+  return head({ title: 'Contact Us | Free Quote | Anthem Epoxy Flooring', description: 'Request a free on-site quote for garage, patio, interior or commercial floor coatings in Anthem, AZ. We respond within one business day.', path: '/contact/', schema: [businessSchema(), crumbSchema(trail)] }) + header('contact') + body + footer();
 }
 
 export function renderPrivacy() {
-  const trail = [{ name: 'Home', url: '/' }, { name: 'Privacy Policy', url: '/privacy-policy/' }];
+  const trail = [{ name: 'Home', url: '/' }, { name: 'Privacy Policy', url: '/privacy/' }];
   const body = `<main id="main"><section class="sec sec--plain"><div class="wrap prose narrow">
   ${crumbs(trail)}
   <h1>Privacy Policy</h1>
@@ -99,9 +99,9 @@ export function renderPrivacy() {
   <h2>Outside services</h2>
   <p>Embedded Google Maps and Google Fonts may collect usage data according to Google’s policies. Form submissions pass through our hosting provider to reach us.</p>
   <h2>Your choices</h2>
-  <p>To review or delete your information, call ${site.phone.display} or reach us through the <a href="/contact-us/">contact page</a>.</p>
+  <p>To review or delete your information, call ${site.phone.display} or reach us through the <a href="/contact/">contact page</a>.</p>
   </div></section></main>`;
-  return head({ title: 'Privacy Policy | Anthem Epoxy Flooring', description: 'How Anthem Epoxy Flooring handles information submitted through its website.', path: '/privacy-policy/' }) + header('') + body + footer();
+  return head({ title: 'Privacy Policy | Anthem Epoxy Flooring', description: 'How Anthem Epoxy Flooring handles information submitted through its website.', path: '/privacy/' }) + header('') + body + footer();
 }
 
 export function render404() {
@@ -109,7 +109,7 @@ export function render404() {
   <p class="eyebrow">404</p>
   <h1>This trail doesn’t lead anywhere.</h1>
   <p>The page you’re after may have moved. Try one of these instead:</p>
-  <p><a class="pill pill--gold" href="/">Home</a> <a class="pill pill--line" href="/garage-floor-coatings/">Garage coatings</a> <a class="pill pill--line" href="/contact-us/">Contact</a></p>
+  <p><a class="pill pill--gold" href="/">Home</a> <a class="pill pill--line" href="/garage-epoxy-flooring/">Garage coatings</a> <a class="pill pill--line" href="/contact/">Contact</a></p>
   </div></section></main>`;
   return head({ title: 'Page Not Found | Anthem Epoxy Flooring', description: 'The page you requested could not be found.', path: '/404.html' }).replace('index, follow', 'noindex') + header('') + body + footer();
 }

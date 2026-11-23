@@ -31,7 +31,7 @@ export function renderHome() {
       <p class="eyebrow eyebrow--light rise">Anthem, Arizona · Floor coatings</p>
       <h1 class="rise">Concrete floors with the polish of the rest of your home.</h1>
       <p class="hero__lead rise">Garage, patio, interior and commercial coatings for Anthem and the north Valley — prepared properly, built in layers, and finished in colors that belong in the desert foothills.</p>
-      <div class="hero__cta rise"><button type="button" class="pill pill--gold" data-drawer-open>Get a free quote</button><a class="pill pill--glass" href="#systems">Explore the systems</a></div>
+      <div class="hero__cta rise"><a class="pill pill--gold" href="#__EST__">Get a free quote</a><a class="pill pill--glass" href="#systems">Explore the systems</a></div>
     </div>
     <div class="wrap hero__strip">
       <dl class="strip">
@@ -55,7 +55,7 @@ export function renderHome() {
         </div>
         <div class="rise">
           <p>Our work is built on preparation. Every slab is diamond-ground to remove the weak top layer, old sealers and paint. Cracks and chips are repaired. Moisture is tested. Only then do we build the coating system, layer by layer, using materials chosen for the space: a flexible base where a slab moves, a decorative flake broadcast for texture, and a UV-stable topcoat wherever sunlight reaches.</p>
-          <p>The result is a floor that looks like it belongs in your home — and still looks that way years from now. Start with our <a href="/garage-floor-coatings/">garage floor coatings</a>, or explore every system below.</p>
+          <p>The result is a floor that looks like it belongs in your home — and still looks that way years from now. Start with our <a href="/garage-epoxy-flooring/">garage floor coatings</a>, or explore every system below.</p>
         </div>
       </div>
     </div>
@@ -66,7 +66,7 @@ export function renderHome() {
     <div class="wrap svcx">
       <div class="svcx__head">
         <p class="eyebrow rise">Our services</p>
-        <h2 class="rise">Nine systems. One standard of preparation.</h2>
+        <h2 class="rise">Eight systems. One standard of preparation.</h2>
         <p class="rise">Hover or tap a service to preview it. Every page covers how the system is built, where it shines and the questions worth asking any contractor.</p>
         <figure class="svcx__fig" aria-hidden="true">${img(services[0].img, { sizes: '(max-width: 900px) 0px, 40vw', alt: '', attrs: 'data-swap-target' })}</figure>
       </div>
@@ -97,7 +97,7 @@ export function renderHome() {
           <p>In Anthem, the garage often works harder than any room in the house. It’s where SUVs and pickups park after the commute up I-17, where bikes and strollers live, where holiday decorations are stacked and where weekend projects happen. Bare concrete absorbs every drip, sheds dust onto everything and never quite looks clean.</p>
           <p>Our standard garage system is built in layers, each with a specific job. Together they produce a floor that bonds tightly, resists hot tires and chemicals, hides everyday dust and keeps its color where the afternoon sun pours in through the open door. Three-car and tandem garages are common here, and we plan the work so large floors still go down evenly from wall to wall.</p>
         </div>
-        <a class="arrow rise" href="/garage-floor-coatings/">See garage systems in detail</a>
+        <a class="arrow rise" href="/garage-epoxy-flooring/">See garage systems in detail</a>
       </div>
       <div class="stack rise" aria-label="Layers of a typical flake garage system">
         <div class="stack__layer stack__layer--5"><b>Topcoat</b><span>UV-stable polyaspartic — resists sun, scuffs and hot tires</span></div>
@@ -123,7 +123,7 @@ export function renderHome() {
         <h2 class="rise">Outdoor rooms deserve finished floors too.</h2>
         <div class="rise">
           <p>Anthem is built for being outside — morning walks, evenings on the patio, weekends around the pool with Daisy Mountain on the horizon. Many backyards here have grown into true outdoor rooms with kitchens, fire features and shade structures. The concrete underneath is often the one piece that never got upgraded.</p>
-          <p>Our <a href="/patio-concrete-coatings/">patio and concrete coatings</a> are designed for the sun. We use UV-stable materials that don’t yellow, choose lighter colors that stay more comfortable underfoot, and build in texture so the surface stays secure when it’s wet from the pool or a summer storm. Courtyards, covered patios, pool decks and front entries all benefit.</p>
+          <p>Our <a href="/outdoor-living-coatings/">patio and concrete coatings</a> are designed for the sun. We use UV-stable materials that don’t yellow, choose lighter colors that stay more comfortable underfoot, and build in texture so the surface stays secure when it’s wet from the pool or a summer storm. Courtyards, covered patios, pool decks and front entries all benefit.</p>
           <p>Planning a visible front entry or walkway? We’ll bring samples you can share with your HOA if your neighborhood reviews exterior changes.</p>
           <p>Timing matters outdoors, too. Fall through spring is the sweet spot for patio work here — comfortable temperatures, dry days and the season when backyards get the most use. Summer jobs start before the heat builds, and we track the radar so fresh resin never meets an afternoon cloudburst.</p>
         </div>
@@ -139,10 +139,10 @@ export function renderHome() {
         <p>Coatings aren’t only for garages. Game rooms, casitas, home gyms, laundry rooms and kitchens can all sit on a seamless coated slab — understated or show-stopping.</p>
       </div>
       <div class="tiles">
-        <a class="tile tile--wide rise" href="/residential-epoxy-flooring/">${img('gameRoom', { sizes: '(max-width: 900px) 94vw, 60vw', alt: '' })}<span class="tile__txt"><b>Residential epoxy flooring</b><em>Seamless interior floors for game rooms, casitas, laundry and flex spaces. Solid satin colors, fine flake or a stone-look finish — all easy to clean and kind to pets.</em></span></a>
-        <a class="tile rise" href="/decorative-flake-flooring/">${img('flakeRust', { sizes: '(max-width: 900px) 94vw, 30vw', alt: '' })}<span class="tile__txt"><b>Decorative flake</b><em>Terracotta, sand and stone blends with built-in grip.</em></span></a>
-        <a class="tile rise" href="/metallic-epoxy-flooring/">${img('metalGold', { sizes: '(max-width: 900px) 94vw, 30vw', alt: '' })}<span class="tile__txt"><b>Metallic epoxy</b><em>Hand-worked pearlescent finishes with real depth.</em></span></a>
-        <a class="tile tile--wide rise" href="/polyaspartic-floor-coatings/">${img('sportsGarage', { sizes: '(max-width: 900px) 94vw, 60vw', alt: '' })}<span class="tile__txt"><b>Polyaspartic &amp; polyurea</b><em>Fast-cure, sun-stable and flexible chemistries that let us finish many garages in a single day and protect slabs that move.</em></span></a>
+        <a class="tile tile--wide rise" href="/home-epoxy-flooring/">${img('gameRoom', { sizes: '(max-width: 900px) 94vw, 60vw', alt: '' })}<span class="tile__txt"><b>Residential epoxy flooring</b><em>Seamless interior floors for game rooms, casitas, laundry and flex spaces. Solid satin colors, fine flake or a stone-look finish — all easy to clean and kind to pets.</em></span></a>
+        <a class="tile rise" href="/flake-flooring/">${img('flakeRust', { sizes: '(max-width: 900px) 94vw, 30vw', alt: '' })}<span class="tile__txt"><b>Decorative flake</b><em>Terracotta, sand and stone blends with built-in grip.</em></span></a>
+        <a class="tile rise" href="/metallic-flooring/">${img('metalGold', { sizes: '(max-width: 900px) 94vw, 30vw', alt: '' })}<span class="tile__txt"><b>Metallic epoxy</b><em>Hand-worked pearlescent finishes with real depth.</em></span></a>
+        <a class="tile tile--wide rise" href="/polyaspartic-flooring/">${img('sportsGarage', { sizes: '(max-width: 900px) 94vw, 60vw', alt: '' })}<span class="tile__txt"><b>Polyaspartic &amp; polyurea</b><em>Fast-cure, sun-stable and flexible chemistries that let us finish many garages in a single day and protect slabs that move.</em></span></a>
       </div>
     </div>
   </section>
@@ -152,7 +152,7 @@ export function renderHome() {
     <div class="wrap fullcta__in">
       <h2 class="rise">Your floor. Done right, the first time.</h2>
       <p class="rise">Free on-site estimates across Anthem and the north Valley. Expect samples, a slab test and a written plan — no hard sell.</p>
-      <div class="rise"><button type="button" class="pill pill--gold" data-drawer-open>Request a quote</button> <a class="pill pill--glass" href="tel:${site.phone.tel}">${site.phone.display}</a></div>
+      <div class="rise"><a class="pill pill--gold" href="#__EST__">Request a quote</a> <a class="pill pill--glass" href="tel:${site.phone.tel}">${site.phone.display}</a></div>
     </div>
   </section>
 
@@ -194,8 +194,8 @@ export function renderHome() {
         <p class="eyebrow rise">Commercial &amp; industrial flooring</p>
         <h2 class="rise">For the businesses that keep Anthem running.</h2>
         <div class="rise">
-          <p>Anthem’s retail centers, restaurants, salons, fitness studios, clinics and service shops all depend on floors that look good and clean quickly. Our <a href="/commercial-epoxy-flooring/">commercial epoxy flooring</a> systems are chosen for each environment — slip-resistant textures for kitchens, chemical-resistant topcoats for salons and detail shops, decorative finishes for showrooms. We work nights and weekends when needed so you don’t lose business days.</p>
-          <p>For storage buildings, contractor shops and light-industrial spaces along the I-17 corridor, our <a href="/warehouse-floor-coatings/">warehouse floor coatings</a> focus on abrasion resistance, dust control, joint repair and clear safety striping, phased around your operations.</p>
+          <p>Anthem’s retail centers, restaurants, salons, fitness studios, clinics and service shops all depend on floors that look good and clean quickly. Our <a href="/commercial-flooring/">commercial epoxy flooring</a> systems are chosen for each environment — slip-resistant textures for kitchens, chemical-resistant topcoats for salons and detail shops, decorative finishes for showrooms. We work nights and weekends when needed so you don’t lose business days.</p>
+          <p>For storage buildings, contractor shops and light-industrial spaces along the I-17 corridor, our warehouse floor coatings focus on abrasion resistance, dust control, joint repair and clear safety striping, phased around your operations.</p>
         </div>
       </div>
     </div>
@@ -260,10 +260,10 @@ export function renderHome() {
   <section class="sec sec--sand">
     <div class="wrap areas">
       <div>
-        <p class="eyebrow rise">Service areas</p>
+        <p class="eyebrow rise">Areas We Serve</p>
         <h2 class="rise">Anthem and the north Valley foothills.</h2>
         <p class="rise">We’re centered on Anthem and serve neighborhoods along the I-17 corridor and into the foothills. Travel time rarely changes our approach, but it helps us schedule well — so let us know where you are.</p>
-        <a class="arrow rise" href="/service-areas/">Explore our service areas</a>
+        <a class="arrow rise" href="/areas-we-serve/">Explore our service areas</a>
       </div>
       <ul class="areas__chips">${areas.map((a) => `<li class="rise"><b>${a.name}</b><span>${esc(a.note)}</span></li>`).join('')}</ul>
     </div>

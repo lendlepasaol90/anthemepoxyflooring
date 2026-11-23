@@ -13,15 +13,14 @@ export const site = {
 };
 
 export const services = [
-  { slug: 'garage-floor-coatings', name: 'Garage Floor Coatings', tag: 'Garages', blurb: 'Full-flake and solid systems that seal out oil, dust and hot-tire marks in everyday and show garages.', img: 'garagePair' },
-  { slug: 'residential-epoxy-flooring', name: 'Residential Epoxy Flooring', tag: 'Interiors', blurb: 'Seamless coated concrete for game rooms, kitchens, casitas, laundry and flex spaces.', img: 'gameRoom' },
-  { slug: 'decorative-flake-flooring', name: 'Decorative Flake Flooring', tag: 'Flake', blurb: 'Chip blends in warm terracotta, sand and stone tones with built-in grip.', img: 'flakeRust' },
-  { slug: 'metallic-epoxy-flooring', name: 'Metallic Epoxy Flooring', tag: 'Metallic', blurb: 'Pearlescent, hand-worked floors with the depth of polished stone or poured metal.', img: 'metalGold' },
-  { slug: 'polyaspartic-floor-coatings', name: 'Polyaspartic Floor Coatings', tag: 'Polyaspartic', blurb: 'Fast-curing, sun-stable coatings for one-day garages and bright entries.', img: 'sportsGarage' },
-  { slug: 'polyurea-floor-coatings', name: 'Polyurea Floor Coatings', tag: 'Polyurea', blurb: 'A tough, elastic base layer for hard-working garages and hobby shops.', img: 'garageDoorway' },
-  { slug: 'patio-concrete-coatings', name: 'Patio & Concrete Coatings', tag: 'Outdoor', blurb: 'Cool-toned, textured coatings for patios, pool decks, courtyards and entries.', img: 'patioLounge' },
-  { slug: 'commercial-epoxy-flooring', name: 'Commercial Epoxy Flooring', tag: 'Commercial', blurb: 'Easy-clean, hard-wearing floors for salons, restaurants, studios and service shops.', img: 'salon' },
-  { slug: 'warehouse-floor-coatings', name: 'Warehouse Floor Coatings', tag: 'Industrial', blurb: 'Abrasion-resistant coatings, joint repair and safety lines for storage and light industry.', img: 'warehouse' },
+  { slug: 'garage-epoxy-flooring', name: 'Garage Floor Coatings', tag: 'Garages', blurb: 'Full-flake and solid systems that seal out oil, dust and hot-tire marks in everyday and show garages.', img: 'garagePair' },
+  { slug: 'home-epoxy-flooring', name: 'Residential Epoxy Flooring', tag: 'Interiors', blurb: 'Seamless coated concrete for game rooms, kitchens, casitas, laundry and flex spaces.', img: 'gameRoom' },
+  { slug: 'flake-flooring', name: 'Decorative Flake Flooring', tag: 'Flake', blurb: 'Chip blends in warm terracotta, sand and stone tones with built-in grip.', img: 'flakeRust' },
+  { slug: 'metallic-flooring', name: 'Metallic Epoxy Flooring', tag: 'Metallic', blurb: 'Pearlescent, hand-worked floors with the depth of polished stone or poured metal.', img: 'metalGold' },
+  { slug: 'polyaspartic-flooring', name: 'Polyaspartic Floor Coatings', tag: 'Polyaspartic', blurb: 'Fast-curing, sun-stable coatings for one-day garages and bright entries.', img: 'sportsGarage' },
+  { slug: 'polyurea-flooring', name: 'Polyurea Floor Coatings', tag: 'Polyurea', blurb: 'A tough, elastic base layer for hard-working garages and hobby shops.', img: 'garageDoorway' },
+  { slug: 'outdoor-living-coatings', name: 'Patio & Concrete Coatings', tag: 'Outdoor', blurb: 'Cool-toned, textured coatings for patios, pool decks, courtyards and entries.', img: 'patioLounge' },
+  { slug: 'commercial-flooring', name: 'Commercial Epoxy Flooring', tag: 'Commercial', blurb: 'Easy-clean, hard-wearing floors for salons, restaurants, studios and service shops.', img: 'salon' },
 ];
 
 export const areas = [

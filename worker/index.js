@@ -8,6 +8,23 @@
  *   RESEND_API_KEY + LEAD_TO_EMAIL (+ optional LEAD_FROM_EMAIL)   email delivery through Resend
  * Every submission is also written to the Worker logs.
  */
+// Old URLs from the first launch, permanently moved.
+const REDIRECTS = {
+  "/garage-floor-coatings/": "/garage-epoxy-flooring/",
+  "/residential-epoxy-flooring/": "/home-epoxy-flooring/",
+  "/decorative-flake-flooring/": "/flake-flooring/",
+  "/metallic-epoxy-flooring/": "/metallic-flooring/",
+  "/polyaspartic-floor-coatings/": "/polyaspartic-flooring/",
+  "/polyurea-floor-coatings/": "/polyurea-flooring/",
+  "/patio-concrete-coatings/": "/outdoor-living-coatings/",
+  "/commercial-epoxy-flooring/": "/commercial-flooring/",
+  "/warehouse-floor-coatings/": "/commercial-flooring/",
+  "/about-us/": "/about/",
+  "/service-areas/": "/areas-we-serve/",
+  "/contact-us/": "/contact/",
+  "/privacy-policy/": "/privacy/"
+};
+
 const SITE = 'Anthem Epoxy Flooring';
 const json = (body, status = 200) =>
   new Response(JSON.stringify(body), { status, headers: { 'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-store' } });
@@ -60,7 +77,7 @@ async function handleLead(request, env) {
     return json({ ok: false, error: 'Invalid submission.' }, 400);
   }
   // Honeypot: bots fill hidden fields. Pretend success.
-  if (clean(data.company_website)) return wantsJson ? json({ ok: true }) : Response.redirect(new URL('/contact-us/?sent=1', request.url), 303);
+  if (clean(data.company_website)) return wantsJson ? json({ ok: true }) : Response.redirect(new URL('/contact/?sent=1', request.url), 303);
 
   const errors = validate(data);
   if (Object.keys(errors).length) return json({ ok: false, error: 'Please check the highlighted fields.', fields: errors }, 422);
@@ -81,7 +98,7 @@ async function handleLead(request, env) {
   if (result.configured && result.failed) {
     return json({ ok: false, error: 'We could not send your request right now. Please call us.' }, 502);
   }
-  return wantsJson ? json({ ok: true }) : Response.redirect(new URL('/contact-us/?sent=1', request.url), 303);
+  return wantsJson ? json({ ok: true }) : Response.redirect(new URL('/contact/?sent=1', request.url), 303);
 }
 
 export default {
@@ -92,6 +109,8 @@ export default {
       return Response.redirect(url.toString(), 301);
     }
     if (url.pathname === '/api/lead') return handleLead(request, env);
+    const moved = REDIRECTS[url.pathname] || REDIRECTS[url.pathname + '/'];
+    if (moved) return Response.redirect(new URL(moved + url.search, url.origin).toString(), 301);
     return env.ASSETS.fetch(request);
   },
 };
