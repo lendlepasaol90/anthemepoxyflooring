@@ -43,6 +43,32 @@ export function renderHome() {
     </div>
   </section>
 
+  <!-- BEFORE & AFTER -->
+  <section class="sec ba-sec" aria-labelledby="ba-title">
+    <div class="wrap">
+      <div class="head2 head2--split rise">
+        <div><p class="eyebrow">Before &amp; after</p><h2 id="ba-title">See what a coating changes.</h2></div>
+        <p>Drag the handle to compare bare, weathered concrete with a finished gray flake coating on the same driveway.</p>
+      </div>
+      <div class="ba rise" data-ba style="--pos:50%">
+        <figure class="ba__layer">
+          ${img('drivewayAfter', { sizes: '(max-width: 1308px) 94vw, 1260px' })}
+          <figcaption class="ba__tag ba__tag--after" aria-hidden="true">After</figcaption>
+        </figure>
+        <figure class="ba__layer ba__layer--before">
+          ${img('drivewayBefore', { sizes: '(max-width: 1308px) 94vw, 1260px' })}
+          <figcaption class="ba__tag ba__tag--before" aria-hidden="true">Before</figcaption>
+        </figure>
+        <span class="ba__handle" aria-hidden="true"><i></i></span>
+        <input class="ba__range" type="range" min="0" max="100" step="1" value="50" aria-label="Before and after comparison: move left to see more of the coated driveway, right to see more of the original concrete" data-ba-range>
+      </div>
+      <dl class="ba__notes">
+        <div class="rise"><dt>Before</dt><dd>Bare, weathered concrete. The slab has gone patchy and dull, old stains and tire marks show from the street, and anything that spills soaks straight in.</dd></div>
+        <div class="rise"><dt>After</dt><dd>A gray flake coating under a glossy, sealed topcoat. The color is even from the garage door to the curb, spills stay on the surface, and the driveway finally matches the rest of the home.</dd></div>
+      </dl>
+    </div>
+  </section>
+
   <!-- INTRO -->
   <section class="sec">
     <div class="wrap intro">

@@ -309,5 +309,29 @@
   "w": 1600,
   "h": 1067,
   "alt": "Warehouse with a reflective epoxy floor"
+ },
+ "drivewayBefore": {
+  "base": "/images/before-after/driveway-before-bare-concrete",
+  "widths": [
+   480,
+   800,
+   1200,
+   1600
+  ],
+  "w": 1600,
+  "h": 859,
+  "alt": "Before: stucco home with a bare, weathered concrete driveway"
+ },
+ "drivewayAfter": {
+  "base": "/images/before-after/driveway-after-gray-flake-coating",
+  "widths": [
+   480,
+   800,
+   1200,
+   1600
+  ],
+  "w": 1600,
+  "h": 859,
+  "alt": "After: the same driveway with a glossy gray flake coating"
  }
 }
