@@ -103,7 +103,7 @@ export function header(active = '', overlay = false) {
 }
 
 export function footer() {
-  const map = `https://www.google.com/maps?q=${encodeURIComponent(site.mapQuery)}&z=12&output=embed`;
+  const map = `https://www.google.com/maps?q=${encodeURIComponent(site.mapQuery)}&z=14&output=embed`;
   const y = new Date().getFullYear();
   return `<footer class="ftr">
   <div class="wrap ftr__top">
@@ -112,11 +112,12 @@ export function footer() {
       <p>Garage, patio, interior and commercial floor coatings for Anthem and the north Valley foothills.</p>
       <p class="ftr__tel"><a href="tel:${site.phone.tel}">${site.phone.display}</a></p>
       <p class="ftr__hours">${site.hours}</p>
+      <address class="ftr__addr">${esc(site.address.street)}<br>${site.address.city}, ${site.address.state} ${site.address.zip}<br><a href="mailto:${site.email}">${site.email}</a></address>
     </div>
     <nav class="ftr__col" aria-label="Services"><h2>Coatings</h2><ul>${services.map((s) => `<li><a href="/${s.slug}/">${s.name}</a></li>`).join('')}</ul></nav>
     <nav class="ftr__col" aria-label="Company"><h2>Company</h2><ul><li><a href="/about-us/">About Us</a></li><li><a href="/service-areas/">Service Areas</a></li><li><a href="/contact-us/">Contact</a></li><li><a href="/privacy-policy/">Privacy Policy</a></li></ul><h2 class="ftr__h2b">Areas</h2><p class="ftr__areas">${areas.map((a) => a.name).join(' / ')}</p></nav>
   </div>
-  <div class="wrap ftr__map"><iframe title="Map of Anthem, Arizona" src="${map}" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe><span class="ftr__pin">Anthem, Arizona</span></div>
+  <div class="wrap ftr__map"><iframe title="Map of Anthem, Arizona" src="${map}" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe><span class="ftr__pin">${esc(site.address.street)}, ${site.address.city}, ${site.address.state}</span></div>
   <div class="wrap ftr__base"><p>© ${y} ${esc(site.name)}</p><p><a href="/privacy-policy/">Privacy</a> · <a href="/sitemap.xml">Sitemap</a></p></div>
 </footer>
 <script src="/assets/js/anthem.js?v=1" defer></script>
@@ -134,8 +135,11 @@ export const businessSchema = () => {
     name: site.name,
     url: `${site.domain}/`,
     image: site.domain + site.ogImage,
-    description: 'Epoxy, flake, metallic, polyaspartic and polyurea floor coatings for garages, patios, interiors and businesses in Anthem, Arizona and nearby north Valley communities.',
-    address: { '@type': 'PostalAddress', addressLocality: 'Anthem', addressRegion: 'AZ', addressCountry: 'US' },
+    description: site.description,
+    email: site.email,
+    founder: { '@type': 'Person', name: site.owner },
+    address: { '@type': 'PostalAddress', streetAddress: site.address.street, addressLocality: site.address.city, addressRegion: site.address.state, postalCode: site.address.zip, addressCountry: 'US' },
+    openingHoursSpecification: [{ '@type': 'OpeningHoursSpecification', dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'], opens: '07:00', closes: '18:00' }],
     geo: { '@type': 'GeoCoordinates', latitude: site.geo.lat, longitude: site.geo.lng },
     areaServed: ['Anthem, AZ', 'Desert Hills, AZ', 'New River, AZ', 'Phoenix, AZ', 'Cave Creek, AZ', 'Black Canyon City, AZ'].map((n) => ({ '@type': 'Place', name: n })),
     knowsAbout: services.map((s) => s.name),

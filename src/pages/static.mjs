@@ -14,6 +14,9 @@ export function renderAbout() {
   <section class="sec">
     <div class="wrap about2">
       <div class="prose">
+        <h2 class="rise">About ${esc(site.name)}</h2>
+        <p class="rise">${esc(site.description)}</p>
+        <p class="rise">${esc(site.name)} is owned and operated by ${esc(site.owner)}.</p>
         <h2 class="rise">Why we do it this way</h2>
         <p class="rise">Coated concrete has a reputation problem. Plenty of people have seen a garage floor peel within a year, or a patio coating turn yellow and chalky. Almost every one of those failures traces back to the same few causes: the concrete wasn’t properly prepared, the wrong material was used for the conditions, or the system was too thin to do its job.</p>
         <p class="rise">We built our approach around avoiding those mistakes. Every slab is diamond-ground with dust collection. Cracks and chips are repaired, not covered. Moisture is tested. Materials are chosen for the specific space — a flexible base for a shop that bakes all summer, a UV-stable topcoat for a garage that faces the afternoon sun, a textured finish for a pool deck. And every layer is documented in your quote.</p>
@@ -76,7 +79,8 @@ export function renderContact() {
     <div class="wrap contact2">
       <div class="contact2__form rise">${form({ id: 'contact', heading: 'Tell us about your project', sub: 'All fields except the message are required.', message: true, submit: 'Send my request' })}</div>
       <div class="contact2__info">
-        <div class="cbox rise"><h2>Call</h2><p class="cbox__big"><a href="tel:${site.phone.tel}">${site.phone.display}</a></p><p>${site.hours}</p></div>
+        <div class="cbox rise"><h2>Call</h2><p class="cbox__big"><a href="tel:${site.phone.tel}">${site.phone.display}</a></p><p>Monday – Saturday: 7am – 6pm<br>Sunday: Closed</p></div>
+        <div class="cbox rise"><h2>Visit or email</h2><address>${esc(site.address.street)}<br>${site.address.city}, ${site.address.state} ${site.address.zip}</address><p><a href="mailto:${site.email}">${site.email}</a></p></div>
         <div class="cbox rise"><h2>What happens next</h2><ol><li>We confirm details and schedule a visit.</li><li>We inspect the slab, test moisture and show samples.</li><li>You receive an itemized written quote.</li><li>We schedule at a time that suits you.</li></ol></div>
         <div class="cbox rise"><h2>Service area</h2><p>Anthem, Desert Hills, New River, Tramonto and north Phoenix, Cave Creek and Black Canyon City. <a href="/service-areas/">Details</a>.</p></div>
       </div>
@@ -99,7 +103,7 @@ export function renderPrivacy() {
   <h2>Outside services</h2>
   <p>Embedded Google Maps and Google Fonts may collect usage data according to Google’s policies. Form submissions pass through our hosting provider to reach us.</p>
   <h2>Your choices</h2>
-  <p>To review or delete your information, call ${site.phone.display} or reach us through the <a href="/contact-us/">contact page</a>.</p>
+  <p>To review or delete your information, call ${site.phone.display}, email <a href="mailto:${site.email}">${site.email}</a> or reach us through the <a href="/contact-us/">contact page</a>.</p>
   </div></section></main>`;
   return head({ title: 'Privacy Policy | Anthem Epoxy Flooring', description: 'How Anthem Epoxy Flooring handles information submitted through its website.', path: '/privacy-policy/' }) + header('') + body + footer();
 }

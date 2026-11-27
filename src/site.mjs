@@ -1,14 +1,17 @@
 // Site-wide configuration for Anthem Epoxy Flooring.
-// PHONE: replace the placeholder below once the business line is live.
 export const site = {
   name: 'Anthem Epoxy Flooring',
   domain: 'https://anthemepoxyflooring.com',
   city: 'Anthem',
   state: 'AZ',
-  phone: { display: '(623) 000-0000', tel: '+16230000000', placeholder: true },
+  phone: { display: '(623) 688-0992', tel: '+16236880992', placeholder: false },
+  email: 'info@anthemepoxyflooring.com',
+  owner: 'Jacob Tristian',
+  address: { street: '39922 N Gavilan Peak Pkwy #50F', city: 'Anthem', state: 'AZ', zip: '85086' },
+  description: 'Give your concrete surfaces a fresh look with Anthem Epoxy Flooring, serving Anthem, AZ, and surrounding North Valley communities. We install durable garage floor coatings, decorative flake flooring, metallic epoxy, residential flooring, patio coatings, and commercial and warehouse flooring systems. Our epoxy, polyaspartic, and polyurea coatings are selected to withstand Arizona’s intense heat, sunlight, and everyday wear. We focus on diamond grinding, concrete repair, and proper surface preparation to achieve attractive, long-lasting results. Whether you’re upgrading a three-car garage in Anthem Country Club or refreshing your backyard patio, we offer customized flooring solutions and free on-site estimates.',
   geo: { lat: 33.8673, lng: -112.1468 },
-  mapQuery: 'Anthem, AZ 85086',
-  hours: 'Mon–Fri 7am–6pm · Sat by appointment',
+  mapQuery: '39922 N Gavilan Peak Pkwy #50F, Anthem, AZ 85086',
+  hours: 'Mon–Sat 7am–6pm · Sun closed',
   ogImage: '/images/hero/foothills-golf-course-at-dusk-1200.webp',
 };
 
